@@ -394,22 +394,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <script>
-    $(document).ready(function () {
-      $(".carousel-item").click(function () {
-        $(".carousel-item").removeClass("active");
-        $(this).addClass("active");
-      });
 
-      $(".carousel-inner").swipe({
-        swipeLeft: function () {
-          $(this).parent().carousel("next");
-        },
-        swipeRight: function () {
-          $(this).parent().carousel("prev");
-        },
-        threshold: 75,
-      });
-    });
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
