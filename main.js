@@ -16,6 +16,11 @@ myHeader();
 function myBars() {
   let bars = document.querySelector("#bar");
   let nav = document.querySelector(".navigation");
+  let homeButton = document.querySelector("#homeButton");
+  let shopButton = document.querySelector("#shopButton");
+  let galleryButton = document.querySelector("#galleryButton");
+  let teamButton = document.querySelector("#teamButton");
+  let contactButton = document.querySelector("#contactButton");
   bars.onclick = function () {
     if (nav.style.right == "0%") {
       nav.style.right = "-50%";
@@ -25,6 +30,31 @@ function myBars() {
       bars.src = "images/x.png";
     }
     nav.classList.toggle("new");
+  };
+  homeButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
+  };
+  shopButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
+  };
+  galleryButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
+  };
+  teamButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
+  };
+  contactButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
   };
 }
 myBars();
