@@ -36,6 +36,11 @@ function myBars() {
     bars.src = "images/menu.png"; // set the bars icon to menu
     nav.classList.remove("new"); // remove the "new" class from the nav element
   };
+  storyButton.onclick = function () {
+    nav.style.right = "-50%"; // hide the sidebar
+    bars.src = "images/menu.png"; // set the bars icon to menu
+    nav.classList.remove("new"); // remove the "new" class from the nav element
+  };
   shopButton.onclick = function () {
     nav.style.right = "-50%"; // hide the sidebar
     bars.src = "images/menu.png"; // set the bars icon to menu
