@@ -1182,10 +1182,10 @@ section .header {
   border-color: #d2b48c;
 }
 
-.info_container a:hover {
+.info a:hover {
   background-color: #634e32; //#d2b48c #634e32
 
-  transition: all 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 
 .info_container .info_item:last-child {
@@ -1370,11 +1370,26 @@ textarea {
 
 .footer-container h3 {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-container a {
   cursor: pointer;
   color: #634e32;
+}
+
+.info-footer a {
+  background: white;
+  padding: 10px;
+  border-radius: 24px;
+  border-color: #634e32;
+  border-style: solid;
+  background-color: #d2b48c;
+}
+
+.info-footer a:hover {
+  background: #634e32;
+  transition: 0.3s fade-in-out;
 }
 
 .footer-container p {
