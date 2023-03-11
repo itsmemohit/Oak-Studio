@@ -101,8 +101,9 @@ header.active .logo a {
 }
 header.active ul li a {
   color: #634e32;
-  border-color: #634e32; //#d2b48c #634e32
+  border-color: #634e32; 
 }
+/* //#d2b48c #634e32 */
 header.active #bar {
   background: #d2b48c;
   color: #634e32;
@@ -157,7 +158,6 @@ header.active #bar {
 .oak-story {
   width: 90%;
   margin: 100px auto;
-  padding-bottom: 40px;
 }
 
 .first-order {
@@ -327,6 +327,16 @@ header.active #bar {
   padding-bottom: 20px;
 }
 
+.portfolio1 p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.portfolio2 p {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
 .portfolio1 {
   margin: 40px;
   text-align: center;
@@ -350,6 +360,14 @@ header.active #bar {
 
   .portfolio p {
     font-size: 10px;
+  }
+
+  .portfolio1 p {
+    margin: 0px;
+  }
+
+  .portfolio2 p {
+    margin: 0px;
   }
 }
 
@@ -375,7 +393,7 @@ header.active #bar {
   margin-bottom: 40px;
 }
 
-.big-bg-cover {
+.big-bg-cover 
   .big-bg {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url(images/bg.jpg);
@@ -389,7 +407,6 @@ header.active #bar {
     justify-content: center;
     align-items: center;
     transition: transform 2s;
-  }
 }
 
 .big-bg:hover {
@@ -431,7 +448,7 @@ header.active #bar {
 .bg-content .bg-link a::before {
   position: absolute;
   content: "";
-  background: #d2b48c; //#d2b48c #634e32
+  background: #d2b48c;
   top: 0;
   bottom: 0;
   left: -100%;
@@ -440,6 +457,7 @@ header.active #bar {
   z-index: -1;
   transition: 0.5s ease-in-out;
 }
+/*  //#d2b48c #634e32 */
 .bg-content .bg-link a:hover::before {
   left: 0%;
 }
@@ -934,11 +952,12 @@ header.active #bar {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font: 300 60px; //"Oswald", sans-serif
+  font: 300 60px; 
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
+/* //"Oswald", sans-serif */
 
 .contact-wrapper {
   display: flex;
@@ -983,9 +1002,10 @@ textarea {
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px; //"Lato", sans-serif
+  font: 700 12px; 
   letter-spacing: 2px;
 }
+/* //"Lato", sans-serif */
 
 .alt-send-button:hover {
   transform: translate3d(0px, -29px, 0px);
@@ -1009,10 +1029,11 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px; //"Lato", sans-serif
+  font: 300 18px;
   letter-spacing: 1.9px;
   color: #bbb;
 }
+/*  //"Lato", sans-serif */
 
 .place {
   margin-left: 62px;
@@ -1250,11 +1271,11 @@ section .header {
   padding: 20px;
   max-width: 35%;
   width: 100%;
-  background: #d2b48c;
+  background: #f6e6d0; 
   border-radius: 10px 0 0 10px;
   color: black;
 }
-
+/* #d2b48c */
 .info_container .info_item {
   padding: 20px;
   border-radius: 10px;
@@ -1312,11 +1333,11 @@ section .header {
 }
 
 .info a:hover {
-  background-color: #black; //#d2b48c #634e32
+  background-color: black; 
 
   transition: 0.3s ease-in-out;
 }
-
+/* //#d2b48c #634e32 */
 .info_container .info_item:last-child {
   margin: 0;
 }
@@ -1343,7 +1364,7 @@ section .header {
 
 .icon i {
   font-size: 20px;
-  color: #black;
+  color: black;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -1379,8 +1400,8 @@ section .header {
 }
 
 .input_container input {
-  background: white; //#d2b48c
-  /* color: #634e32; */
+  background: white; 
+  /* color: #634e32; //#d2b48c */
 }
 
 form .row {
@@ -1411,8 +1432,9 @@ form .form_control {
 textarea {
   resize: none;
   /* font-family: sans-serif; */
-  background: white; //#d2b48c
+  background: white; 
 }
+/* //#d2b48c */
 
 .btn {
   width: 100%;
@@ -1420,7 +1442,7 @@ textarea {
 }
 
 .btn button {
-  background: #634e32;
+  background: #d2b48c;
   border: 0;
   padding: 16px 45px;
   color: #fff;
@@ -1430,11 +1452,15 @@ textarea {
   font-weight: 400;
   transition: 0.4s;
 }
-
+/* #634e32 */
 .btn button:hover {
-  background: #d2b48c;
-}
+  background: white;
+  border: #d2b48c solid;
+  color: #000;
 
+  transition: all .3s ease-in-out;
+}
+/* #d2b48c */
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1100px;
@@ -1491,7 +1517,7 @@ textarea {
 }
 
 .footer-container {
-  background: #d2b48c;
+  background: #f6e6d0;
   padding: 30px;
   border-radius: 12px;
   margin: 20px 20px 20px 20px;
@@ -1532,7 +1558,7 @@ textarea {
 }
 
 .footer-container a:hover {
-  color: white;
+  color: #d2b48c;
   transition: all 0.3s ease-in-out;
 }
 
